@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 90vh;
+            width: 60vw;
+            position: relative;
+            left: 20vw;
+        }
+        .upper{
+            border: 2px solid ;
+            height: 45vh;
+        }
+        .lower{
+            border:2px solid;
+            height: 44.5vh;
+            background-color: black;
+        }
+        .circle{
+            border: 25px solid white;
+            width:20vw;
+            height: 40vh;
+            position: absolute;
+            bottom: 24vh;
+            right: 18vw;
+            border-radius: 50%;
+            background-color: red;
+        }
+        /*.left{
+            border: 2px solid;
+            border-color: aqua;
+            height: 15vh;
+            width: 10vw;
+            position: absolute;
+            right: 4.5vw;
+            bottom: 30vh;
+        }*/
+        .circle::before{
+            content: '';
+            border: 2px solid;
+            border-color: white;
+            height: 15vh;
+            width: 10vw;
+            position: absolute;
+            right: 21.5vw;
+            bottom: 5vh;
+            background-color: white;
+        }
+        .circle::after{
+            content: '';
+            border: 2px solid ;
+            border-color: white;
+            height: 15vh;
+            width: 10vw;
+            position: absolute;
+            left: 21.5vw;
+            top:21vh ;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="upper"></div>
+        <div class="lower"></div>
+        <section class="circle"></section>
+   </div>
+</body>
+</html>
